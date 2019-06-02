@@ -1,9 +1,9 @@
 var rows = prompt("How many rows for your multiplication table?");
     var cols = prompt("How many columns for your multiplication table?");
     if(rows == "" || rows == null)
-   		 rows = 10;
+   		 rows = 20;
     if(cols== "" || cols== null)
-   		 cols = 10;
+   		 cols = 20;
     createTable(rows, cols);
     function createTable(rows, cols)
     {
@@ -15,7 +15,7 @@ var rows = prompt("How many rows for your multiplication table?");
         while(j<=cols)
         {
   		  output = output + "<td>" + i*j + "</td>";
-   		  j = j+1;
+   		  j = j+3;
    		}
    		 output = output + "</tr>";
    		 j = 1;
